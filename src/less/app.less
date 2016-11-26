@@ -1,0 +1,118 @@
+/****************************
+SKURT IMS 
+
+TABLE OF CONTENTS
+ * 1. BOOTSTRAP
+ * 2. VARIABLES/MIXINS
+ * 3. LAYOUTS
+ * 4. COMPONENTS
+*/
+
+/* 1. BOOTSTRAP */
+@import 'bootstrap';
+@import 'font-awesome';
+@import 'react-widgets';
+
+/* 2. VARIABLES/MIXINS */
+@import 'src/less/_variables';
+
+body {
+	background: @black;
+	color: @white;
+}
+
+i {
+	cursor: pointer;
+}
+
+form {
+	width: 100%;
+	button {
+		background-color: @black;
+		border: transparent;
+	}
+	i {
+	 outline: none;
+	}
+}
+
+.flightInfo {
+	display: block;
+	font-size: xx-large;
+	text-align: center;
+	font-weight: lighter;
+	padding-top: 3em;
+	width: inherit;
+}
+
+.errorMessage {
+	background-color: @red-error-bg;
+	color: @black;
+	text-align: center;
+  width: inherit;
+  height: 5em;
+  position: relative;
+  p {
+  	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	marging-right:-50%;
+  	transform: translate(-50%, -50%);
+  	font-weight: bold;
+  	font-size: 1.5em;
+  	width: inherit;
+  	white-space: nowrap;
+  }
+  i {
+  	float: left;
+  	top: 50%;
+  	padding: .3em .3em 0 .3em;
+  }
+}
+
+.delay {
+	color: @red-error-bg;
+}
+
+.ontime {
+	color: @green-bg;
+}
+
+.visuallyHidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	background: transparent;
+}
+
+#dashboard {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#userInput {
+	user-select: none;
+	text-align: center;
+	padding: 5em 0 0 2em;
+
+	input[type="text"] {
+		font-weight: lighter;
+		width: 80%;
+		border: solid @black;
+    border-bottom-color: @white;
+    background-color: transparent;
+    outline: none;
+		font-size: 3em;
+		margin-right: .5em;
+	}
+}

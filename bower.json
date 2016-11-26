@@ -1,0 +1,20 @@
+{
+  "name": "Flight status checker",
+  "version": "0.0.0",
+  "homepage": "",
+  "authors": [
+    "Sorin Chereji sorcher123@gmail.com"  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0"
+  }
+}
